@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <link href="assets/img/snippet.png" rel="icon">
+
+
+<title>Login</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;640&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+
+<body>
+
+  
+  
+
+    <!-- FUCKING BG -->
+  <section class="scene">
+    <!-- <div class="sun"></div> -->
+
+    <!-- CONTAINER -->
+  <div class="container">
+    <div class="form-div">
+        
+      <img src="start/assets/img/MUT2.png"  alt="">
+      <p>Untuk memastikan bahwa hanya kamu yang membuka ini, passwordnya adalah :<br><br><i>"SATU KATA YANG MENGGAMBARKAN HAL BAIK?"</i></p>
+      <input type="text" name="game" id="game" placeholder="Emutt jawabnya disini">
+    
+      <button type="submit" onclick="validate()">skuyy</button>
+    </div>
+  </div>
+
+
+    <div class="bg">
+        <img src="assets/police_car.gif" class="car1" alt="">
+        <img src="assets/bike-bicycle.gif" class="car2" alt="">
+    </div>
+
+    
+</section>
+
+
+
+
+</body>
+
+<script type="text/javascript">
+ 
+  function validate(){
+    const game = document.getElementById("game");
+    let lower = game.value.toLowerCase();
+
+    if(["meow meow meow", "emut cantik", "meow", "meow meow"].includes(lower)) {
+      location.href = "start/index.html";
+    } else{
+      alert("Salah wlee, ulangi!");
+      
+    }
+  }
+
+  const sun = document.querySelector('.sun');
+        const body = document.querySelector('body');
+        
+        sun.onclick = function(){
+            body.classList.toggle('dark')
+        }
+
+ 
+ </script>
+
+</html>
